@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roca Fuerte Exportaciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hola</h1>
+
+<!-- BARRA SUPERIOR -->
+<div class="topbar">
+    <p>📞 +591 72866357 | ✉️ rocafuerte.exportaciones@gmail.com | 📍 Calle San Felipe #789</p>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="img/logo.png" alt="Roca Fuerte">
+        <h1>ROCA FUERTE EXPORTACIONES</h1>
+    </div>
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#minerales">Minerales</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Exportación de Minerales</h2>
+    <p>Calidad, transparencia y confianza para mercados internacionales</p>
+    <button onclick="abrirWhatsapp()">Cotizar ahora</button>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="section">
+    <h2>Roca Fuerte Exportaciones</h2>
+    <p>
+        Empresa boliviana dedicada a la exportación de minerales, comprometida con la
+        calidad, trazabilidad y cumplimiento normativo, trabajando con productores
+        estratégicos para mercados internacionales.
+    </p>
+</section>
+
+<!-- MINERALES -->
+<section id="minerales" class="section minerales">
+    <h2>Exploramos los Minerales</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="img/sal.jpg">
+            <h3>Sal</h3>
+            <button onclick="mostrarInfo('Sal')">Mostrar más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/puzolana.jpg">
+            <h3>Puzolana</h3>
+            <button onclick="mostrarInfo('Puzolana')">Mostrar más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/baritina.jpg">
+            <h3>Baritina</h3>
+            <button onclick="mostrarInfo('Baritina')">Mostrar más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/bentonita.jpg">
+            <h3>Bentonita</h3>
+            <button onclick="mostrarInfo('Bentonita')">Mostrar más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/rodio.jpg">
+            <h3>Rodio</h3>
+            <button onclick="mostrarInfo('Rodio')">Mostrar más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/caolin.jpg">
+            <h3>Caolín</h3>
+            <button onclick="mostrarInfo('Caolín')">Mostrar más</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section contacto">
+    <h2>Contáctanos</h2>
+    <p>📍 Calle San Felipe #789</p>
+    <p>📞 +591 72866357</p>
+    <p>✉️ rocafuerte.exportaciones@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© Roca Fuerte Exportaciones</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
