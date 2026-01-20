@@ -1,30 +1,20 @@
 function abrirWhatsapp(){
-    const telefono = "59172866357";
-    const mensaje = "Hola, deseo información y cotización de minerales.";
-    window.open(
-        `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`,
-        "_blank"
-    );
+    window.open("https://wa.me/59172866357","_blank")
 }
 
-function mostrarInfo(mineral){
-    const archivos = {
-        "Sal": "Ficha técnica SAL GRANULADA.pdf",
-        "Puzolana": "Ficha técnica PUZOLANA.pdf",
-        "Baritina": "Ficha técnica BARITINA.pdf",
-        "Bentonita": "Ficha técnica BENTONITA.pdf",
-        "Rodio": "FICHA TECNICA RODIO.pdf",
-        "Caolín": "Ficha técnica KAOLIN.pdf"
-    };
+const links = {
+    sal: "https://drive.google.com/uc?export=download&id=1Q8VqHGYa5pVbKENR_XW70bC7fR_SBsRR",
+    puzolana: "https://drive.google.com/uc?export=download&id=1U3MAEkINa0aYrvUJr4N4rq0tjpNjmoYo",
+    baritina: "https://drive.google.com/uc?export=download&id=1xeAv5z-czxMOFZLmDBVl1hjkTrD3ZITZ",
+    bentonita: "https://drive.google.com/uc?export=download&id=18_rzFIRXhuqa5u8qVnhVyUmrTvs7Zum7",
+    rodio: "https://drive.google.com/uc?export=download&id=1MQzVJjza_Gsh8muT3s7nw2Ij0a8LDle",
+    caolin: "https://drive.google.com/uc?export=download&id=17IfPGjHwnGP54y5qhoUJ8MlfkBHc6W3"
+}
 
-    const archivo = archivos[mineral];
-
-    if(archivo){
-        const enlace = document.createElement("a");
-        enlace.href = `pdf/${archivo}`;
-        enlace.download = archivo;
-        document.body.appendChild(enlace);
-        enlace.click();
-        document.body.removeChild(enlace);
-    }
+function descargar(mineral){
+    const url = links[mineral.toLowerCase()]
+    if(!url) return
+    const a = document.createElement("a")
+    a.href = url
+    a.click()
 }

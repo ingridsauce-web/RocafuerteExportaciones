@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Roca Fuerte Exportaciones</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="topbar">
-    📞 +591 72866357 |
-    ✉️ rocafuerte.exportaciones@gmail.com |
-    📍 Calle San Felipe #789
+    <span>📞 +591 72866357</span>
+    <span>✉️ rocafuerte.exportaciones@gmail.com</span>
+    <span>📍 Calle San Felipe #789</span>
 </div>
 
 <header class="header">
     <div class="logo">
-        <img src="img/logo empresa.png" alt="Logo Roca Fuerte Exportaciones">
+        <img src="img/logo empresa.png">
         <h1>ROCA FUERTE EXPORTACIONES</h1>
     </div>
     <nav>
@@ -27,12 +27,18 @@
 </header>
 
 <section class="hero">
-    <h2>Exportación de Minerales</h2>
-    <p>Calidad, transparencia y confianza para mercados internacionales</p>
-    <button onclick="abrirWhatsapp()">Cotizar ahora</button>
+    <div class="container">
+        <h1>Exportación de Minerales</h1>
+        <p>
+            Calidad, trazabilidad y confianza para mercados internacionales
+        </p>
+        <a href="https://wa.me/59172866357" target="_blank" class="btn">
+            Cotizar ahora
+        </a>
+    </div>
 </section>
 
-<section id="nosotros" class="section">
+<section id="nosotros">
     <h2>Roca Fuerte Exportaciones</h2>
     <p>
         Empresa boliviana dedicada a la exportación de minerales, comprometida con la
@@ -41,49 +47,51 @@
     </p>
 </section>
 
-<section id="minerales" class="section minerales">
-    <h2>Exploramos los Minerales</h2>
+<section id="minerales">
+    <h2>Nuestros Minerales</h2>
 
     <div class="cards">
-        <div class="card">
-            <img src="img/SAL.jpg" alt="Sal granulada">
-            <h3>Sal</h3>
-            <button onclick="mostrarInfo('Sal')">Mostrar más</button>
+
+        <div class="mineral-card">
+            <img src="img/SAL.jpg">
+            <h5>Sal</h5>
+            <button onclick="descargar('sal')">Mostrar más</button>
         </div>
 
-        <div class="card">
-            <img src="img/PUZONALANA.jpg" alt="Puzolana">
-            <h3>Puzolana</h3>
-            <button onclick="mostrarInfo('Puzolana')">Mostrar más</button>
+        <div class="mineral-card">
+            <img src="img/PUZONALANA.jpg">
+            <h5>Puzolana</h5>
+            <button onclick="descargar('puzolana')">Mostrar más</button>
         </div>
 
-        <div class="card">
-            <img src="img/BARITINA.jpg" alt="Baritina">
-            <h3>Baritina</h3>
-            <button onclick="mostrarInfo('Baritina')">Mostrar más</button>
+        <div class="mineral-card">
+            <img src="img/BARITINA.jpg">
+            <h5>Baritina</h5>
+            <button onclick="descargar('baritina')">Mostrar más</button>
         </div>
 
-        <div class="card">
-            <img src="img/BENTONITA.jpg" alt="Bentonita">
-            <h3>Bentonita</h3>
-            <button onclick="mostrarInfo('Bentonita')">Mostrar más</button>
+        <div class="mineral-card">
+            <img src="img/BENTONITA.jpg">
+            <h5>Bentonita</h5>
+            <button onclick="descargar('bentonita')">Mostrar más</button>
         </div>
 
-        <div class="card">
-            <img src="img/RODIO.jpg" alt="Rodio">
-            <h3>Rodio</h3>
-            <button onclick="mostrarInfo('Rodio')">Mostrar más</button>
+        <div class="mineral-card">
+            <img src="img/RODIO.jpg">
+            <h5>Rodio</h5>
+            <button onclick="descargar('rodio')">Mostrar más</button>
         </div>
 
-        <div class="card">
-            <img src="img/CAOLIN.jpg" alt="Caolín">
-            <h3>Caolín</h3>
-            <button onclick="mostrarInfo('Caolín')">Mostrar más</button>
+        <div class="mineral-card">
+            <img src="img/CAOLIN.jpg">
+            <h5>Caolín</h5>
+            <button onclick="descargar('caolin')">Mostrar más</button>
         </div>
+
     </div>
 </section>
 
-<section id="contacto" class="section contacto">
+<section id="contacto">
     <h2>Contáctanos</h2>
     <p>📍 Calle San Felipe #789</p>
     <p>📞 +591 72866357</p>
