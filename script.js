@@ -7,7 +7,7 @@ const links = {
     puzolana: "https://drive.google.com/uc?export=download&id=1U3MAEkINa0aYrvUJr4N4rq0tjpNjmoYo",
     baritina: "https://drive.google.com/uc?export=download&id=1xeAv5z-czxMOFZLmDBVl1hjkTrD3ZITZ",
     bentonita: "https://drive.google.com/file/d/18_rzFIRXhuqa5u8qVnhVyUrnTVs7Zum7/view?usp=sharing",
-    rodio: "https://drive.google.com/file/d/1MQzVJjza-_Gsh8muT3s7nw2Ij0a8LDle/view?usp=sharing",
+    rodio: "https://drive.google.com/uc?export=download&id=1MQzVJjza_Gsh8muT3s7nw2Ij0a8LDlehttps://drive.google.com/file/d/1MQzVJjza-_Gsh8muT3s7nw2Ij0a8LDle/view?usp=drivesdk",
     caolin: "https://drive.google.com/uc?export=download&id=17IfPGjHwnGP54y5qhoUJ8MlfkBHc6W3"
 }
 
