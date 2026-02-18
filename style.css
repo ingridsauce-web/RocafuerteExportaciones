@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --naranja:#23154a;
+    --naranja-claro:#2d1c74;
+    --oscuro:#121212;
+    --gris:#f4f4f4;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",system-ui,Arial,sans-serif;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+    background:var(--gris);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* TOPBAR */
+
+.topbar{
+    background:linear-gradient(90deg,var(--naranja),var(--naranja-claro));
+    color:#fcfcfc;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:8px 20px;
+    font-size:12px;
+}
+
+/* HEADER */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 40px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width: 140px;px;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:24px;
+    font-weight:600;
+    color:#222;
+    position:relative;
+    font-size:14px;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:2px;
+    background:linear-gradient(90deg,var(--naranja),var(--naranja-claro));
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.25)),
+      url("img/IMAGEN\ FONDO\ ENCABEZADO\ \ ROCA\ FUERTE.jpeg") center center no-repeat;
+    background-size:cover;
+    overflow:hidden;
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    color:#f8fbfc;
+    font-size:clamp(32px,5vw,52px);
+    font-weight:900;
+    text-shadow:0 10px 30px rgba(0,0,0,.6);
+}
+
+.hero p{
+    color:rgba(247, 251, 255, 0.95);
+    font-size:clamp(14px,2vw,18px);
+    max-width:700px;
+    margin:20px auto;
+}
+
+.hero .btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 40px;
+    background:#fff;
+    color:var(--naranja);
+    font-weight:700;
+    border-radius:50px;
+    text-decoration:none;
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.hero .btn:hover{
+    transform:translateY(-5px);
+}
+
+/* SECCIONES */
+
+section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+section h2{
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+section h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:linear-gradient(90deg,var(--naranja),var(--naranja-claro));
+    display:block;
+    margin:10px auto 0;
+}
+
+section p{
+    max-width:700px;
+    margin:auto;
+    font-size:15px;
+    color:#333;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.mineral-card{
+    background:#fff;
+    border-radius:20px;
+    padding-bottom:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.mineral-card:hover{
+    transform:translateY(-10px);
+}
+
+.mineral-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:20px 20px 0 0;
+}
+
+.mineral-card h5{
+    margin:16px 0;
+    font-size:18px;
+    font-weight:700;
+}
+
+.mineral-card button{
+    padding:10px 28px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,var(--naranja),var(--naranja-claro));
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    font-size:13px;
+}
+
+#contacto{
+    position:relative;
+    overflow:hidden;
+
+    min-height:35vh;
+    padding:40px 20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:#fff;
+
+    /* Degradado fijo ahumado */
+    background:linear-gradient(
+        135deg,
+        #0a1628 0%,     /* azul marino oscuro */
+        #142850 50%,    /* azul profundo */
+        #7a3e00 75%,    /* naranja ahumado */
+        #a67c00 100%    /* amarillo oscuro */
+    );
+}
+
+/* Brillo elegante */
+
+#contacto::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:radial-gradient(circle,rgba(255,255,255,0.25),transparent 70%);
+    top:-80px;
+    left:-80px;
+    animation:brillo 8s linear infinite;
+}
+
+@keyframes brillo{
+    0%{transform:translate(0,0);}
+    50%{transform:translate(60px,40px);}
+    100%{transform:translate(0,0);}
+}
+
+/* Texto */
+
+#contacto h2{
+    font-size:26px;
+    margin-bottom:18px;
+    font-weight:800;
+    z-index:2;
+}
+
+#contacto p{
+    font-size:15px;
+    margin:6px 0;
+    color:#f5f5f5;
+    z-index:2;
+}
