@@ -55,7 +55,7 @@ body{
 }
 
 .logo img{
-    width: 140px;px;
+    width: 140px;
 }
 
 nav a{
@@ -333,7 +333,7 @@ section p{
     content: "";
     width: 8px;
     height: 8px;
-    background: #ff941a; /* Amarillo */
+    background: #eda552; /* Amarillo */
     display: inline-block;
     margin-right: 8px;
     border-radius: 50%;
@@ -348,4 +348,23 @@ section p{
     .ventajas-grid {
         grid-template-columns: 1fr;
     }
+}
+@media (max-width: 768px){
+
+    .hero{
+        min-height: 85vh;              /* Más altura en móvil */
+        background-position: center top; /* Mantiene el foco arriba */
+        padding: 0 20px;
+    }
+
+    .hero h1{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero p{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
 }
