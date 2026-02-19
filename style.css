@@ -2,7 +2,7 @@
 
 :root{
     --naranja:#23154a;
-    --naranja-claro:#2d1c74;
+    --naranja-claro:#0b3c5d;
     --oscuro:#121212;
     --gris:#f4f4f4;
 }
@@ -142,19 +142,21 @@ section{
 }
 
 section h2{
-    font-size:28px;
-    font-weight:800;
-    margin-bottom:20px;
+    display:inline-block;
+    padding-bottom:6px;
+    border-bottom:4px solid transparent;
+    background:linear-gradient(90deg,var(--naranja),var(--amarillo)) bottom no-repeat;
+    background-size:100% 4px;
+}
+section h2::after{
+  content: "";
+    display: block;
+    width: 70%;
+    height: 4px;
+    margin: 10px auto 0 auto;
+    background: linear-gradient(90deg, #0b3c5d, #0b3c5d);
 }
 
-section h2::after{
-    content:"";
-    width:70px;
-    height:4px;
-    background:linear-gradient(90deg,var(--naranja),var(--naranja-claro));
-    display:block;
-    margin:10px auto 0;
-}
 
 section p{
     max-width:700px;
@@ -227,7 +229,7 @@ section p{
     background:linear-gradient(
         135deg,
         #0a1628 0%,     /* azul marino oscuro */
-        #142850 50%,    /* azul profundo */
+        #0b3c5d 50%,    /* azul profundo */
         #7a3e00 75%,    /* naranja ahumado */
         #a67c00 100%    /* amarillo oscuro */
     );
@@ -240,7 +242,7 @@ section p{
     position:absolute;
     width:300px;
     height:300px;
-    background:radial-gradient(circle,rgba(255,255,255,0.25),transparent 70%);
+    background:radial-gradient(circle,rgba(32, 32, 49, 0.97),transparent 70%);
     top:-80px;
     left:-80px;
     animation:brillo 8s linear infinite;
@@ -277,7 +279,7 @@ section p{
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #0b3c5d; /* Azul principal */
+    color: #090a0a; /* Azul principal */
     position: relative;
     display: inline-block;
 }
@@ -288,7 +290,7 @@ section p{
     width: 70%;
     height: 4px;
     margin: 10px auto 0 auto;
-    background: linear-gradient(90deg, #ff7e2d, #ffb347);
+    background: linear-gradient(90deg, #0b3c5d, #0b3c5d);
     border-radius: 4px;
 }
 
@@ -331,14 +333,14 @@ section p{
     content: "";
     width: 8px;
     height: 8px;
-    background: #ffb347; /* Amarillo */
+    background: #eda552; /* Amarillo */
     display: inline-block;
     margin-right: 8px;
     border-radius: 50%;
 }
 
 .ventaja-item p {
-    color: #444;
+    color: #101010;
     line-height: 1.6;
 }
 
