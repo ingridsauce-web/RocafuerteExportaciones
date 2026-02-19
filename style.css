@@ -344,11 +344,6 @@ section p{
     line-height: 1.6;
 }
 
-@media (max-width: 900px) {
-    .ventajas-grid {
-        grid-template-columns: 1fr;
-    }
-}
 @media (max-width: 768px){
 
     .hero{
