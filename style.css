@@ -389,17 +389,39 @@ section p{
 /* RESPONSIVE MOVIL */
 /* ============================= */
 
+/* ============================= */
+/* RESPONSIVE MOVIL */
+/* ============================= */
+
 @media (max-width:768px){
 
-    /* Topbar en columna */
+    /* HERO */
+    .hero{
+        min-height:80vh;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .hero h1{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:15px;
+        padding:0 10px;
+    }
+
+    /* TOPBAR */
     .topbar{
         flex-direction:column;
         gap:6px;
         text-align:center;
     }
 
+    /* MENU */
     .menu-toggle{
-        display:block;   /* Solo aparece en celular */
+        display:block;
     }
 
     #nav{
@@ -418,19 +440,17 @@ section p{
         display:flex;
     }
 
-}
-    
-
     nav a{
         margin:10px 0;
     }
 
-    /* Servicios: 1 columna */
+    /* SERVICIOS */
     .ventajas-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;   /* 1 columna en celular */
     }
 
-    /* Ajuste padding general */
     section{
         padding:60px 20px;
     }
+
+}
