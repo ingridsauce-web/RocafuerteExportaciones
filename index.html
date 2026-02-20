@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Roca Fuerte Exportaciones</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,15 +11,19 @@
 <div class="topbar">
     <span>📞 +591 72866357</span>
     <span>✉️ rocafuerte.exportaciones@gmail.com</span>
-    <span>📍 Calle Potosí entre  Bolivar y Adolfo Mier - Zona Central </span>
+    <span>📍 Calle Potosí entre Bolívar y Adolfo Mier - Zona Central</span>
 </div>
 
 <header class="header">
     <div class="logo">
-        <img src="img/logo sin fondo png..png">
-    
+        <img src="img/logo sin fondo png..png" alt="Roca Fuerte Logo">
     </div>
-    <nav>
+
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
+
+    <nav id="nav">
         <a href="#nosotros">Nosotros</a>
         <a href="#minerales">Minerales</a>
         <a href="#servicios">Servicios</a>
@@ -40,20 +44,15 @@
 </section>
 
 <section id="nosotros">
-    <h2>
-        RocaFuerte<br>
-        Import - Export
-    </h2>
+    <h2>RocaFuerte Import - Export</h2>
     <p>
-        Empresa boliviana dedicada a la exportación de minerales, comprometida con la
-        calidad, trazabilidad y cumplimiento normativo, trabajando con productores
-        estratégicos para mercados internacionales.
+        Empresa boliviana dedicada a la exportación de minerales,
+        comprometida con la calidad, trazabilidad y cumplimiento normativo.
     </p>
 </section>
 
 <section id="minerales">
     <h2>Nuestros Minerales</h2>
-
     <div class="cards">
 
         <div class="mineral-card">
@@ -101,8 +100,7 @@
             <h5>Ulexita Cacinada</h5>
             <button onclick="descargar('ulexita2')">Mostrar más</button>
         </div>
-
-
+</section>
     </div>
 </section>
 <section id="servicios" class="servicios-section">
@@ -144,14 +142,8 @@
     </div>
 </section>
 
-    </div>
-</section>
-
-    </div>
-</section>
 <section id="contacto">
     <h2>Contáctanos</h2>
-    <p>📍 Calle Potosí entre  Bolivar y Adolfo Mier - Zona Central</p>
     <p>📞 +591 72866357</p>
     <p>✉️ rocafuerte.exportaciones@gmail.com</p>
 </section>
